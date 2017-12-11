@@ -4,7 +4,7 @@ MAX_SOUL_SHARDS = MAX_SOUL_SHARDS or 28
 
 local function isShard(bag, slot)
     local link = GetContainerItemLink(bag, slot)
-    return link and string.find(link, 'Soul Shard')
+    return link and string.find(link, 'Soul Shard') == 31
 end
 
 local function deleteItem(bag, slot)
@@ -27,6 +27,7 @@ local function findShards()
 end
 
 local function SSM_Main(n)
+    findShards()
     if tonumber(n) then
         MAX_SOUL_SHARDS = tonumber(n)
     elseif n ~= '' then
