@@ -1,6 +1,8 @@
-## Interface: 11200
+## Interface: 11302
 ## Title: SoulShardManager
-## Author: Blizik
 ## Notes: Keeps your Soul Shards in check.
+## Author: Blizik
+## Version: 1.1
 ## SavedVariablesPerCharacter: MAX_SOUL_SHARDS
+
 SoulShardManager.lua
