@@ -8,7 +8,6 @@ local function isShard(bag, slot)
 end
 
 local function deleteItem(bag, slot)
-    DEFAULT_CHAT_FRAME:AddMessage(bag .. ':' .. slot)
     PickupContainerItem(bag, slot)
     DeleteCursorItem()
 end
